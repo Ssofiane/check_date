@@ -6,4 +6,3 @@ while IFS=";/" read start_day start_month start_year start_time group end_day en
     diff=$((end_epoch - start_epoch))
     echo "$start_day/$start_month/$start_year $start_time|$end_day/$end_month/$end_year $end_time|$start_epoch|$end_epoch|$diff"
 done < /dev/stdin
-echo "hello"
